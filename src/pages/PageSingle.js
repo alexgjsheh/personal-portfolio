@@ -44,7 +44,7 @@ const PageSingle = () => {
         };
         fetchData();
         console.log("hi");
-    }, [restPath]);
+    }, [restPath, slug]);
 
     useEffect(() => {
         if (isLoaded) {
