@@ -1,0 +1,37 @@
+.site-footer {
+    grid-area: footer;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2.25rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: block;
+    fill: white;
+    transition: fill 0.5s ease;
+}
+
+.social-links svg {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    fill: #fe9000;
+}
+
+@media (min-width: 920px) {
+    .social-links svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}

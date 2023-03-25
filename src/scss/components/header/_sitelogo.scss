@@ -1,0 +1,50 @@
+.site-logo {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    animation: rotate 3s linear infinite;
+    cursor: pointer;
+    transition: fill 0.5s;
+}
+
+.cls-1 {
+    fill: #f8f7f4;
+}
+
+.cls-2 {
+    fill: #b6d8eb;
+}
+
+.cls-3 {
+    fill: #243846;
+}
+
+@media (min-width: 580px) {
+    .site-logo {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .site-logo {
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .site-logo {
+        height: 7rem;
+        width: 7rem;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

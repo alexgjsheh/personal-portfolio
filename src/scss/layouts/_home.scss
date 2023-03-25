@@ -1,0 +1,34 @@
+.intro-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-top: 12rem;
+}
+
+// .intro {
+//     height: 75%;
+// }
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.intro-text {
+    animation: slideFromLeft 1.5s ease-in;
+}
+
+.intro-title {
+    animation: slideFromLeft 1s ease-in;
+}

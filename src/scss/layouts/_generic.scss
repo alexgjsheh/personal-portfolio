@@ -1,0 +1,89 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main-container {
+    // margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.opaque-background {
+    background-color: rgba(18, 27, 36, 0.5);
+    // border: 1px solid white;
+}
+
+.hidden-left {
+    opacity: 0;
+    transition: opacity 1s, transform 1.25s;
+    transform: translateX(-100%);
+}
+
+.hidden-right {
+    opacity: 0;
+    transition: opacity 1s, transform 1.25s;
+    transform: translateX(+100%);
+}
+
+.hidden,
+.hidden-about {
+    opacity: 0;
+    transform: translateY(+100%);
+    transition: opacity 1.25s, transform 1.25s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+@media (min-width: 580px) {
+    .main-container {
+        width: 88%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .main-container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .main-container {
+        width: 85%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main-container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .main-container {
+        width: 80%;
+        margin-left: 6em;
+        margin-right: 6rem;
+    }
+}

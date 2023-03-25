@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.App {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background: $color__background-body; // Fallback for when there is no custom background color defined.
+    color: #f8f7f4;
+}
