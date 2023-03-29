@@ -12,7 +12,7 @@ import backgroundImg from "./images/portfolioBackgroundSquares.svg";
 
 const AppRouter = () => {
     return (
-        <Router>
+        <Router basename="/">
             <div
                 className="App"
                 style={{ backgroundImage: `url(${backgroundImg})` }}
