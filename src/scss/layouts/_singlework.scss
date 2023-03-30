@@ -44,26 +44,26 @@
 
 .more-works-image:hover,
 .more-works-image:focus {
-    border: 1px solid white;
-    box-shadow: 0 0 4px #b6d8eb;
+    border: 1px solid $off_white;
+    box-shadow: 0 0 4px $light_blue;
     animation: glow 4s linear infinite;
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 4px #b6d8eb;
+        box-shadow: 0 0 4px $light_blue;
     }
     25% {
-        box-shadow: 0 0 12px #fe9000;
+        box-shadow: 0 0 12px $orange;
     }
     50% {
-        box-shadow: 0 0 20px #243846;
+        box-shadow: 0 0 20px $dark_blue;
     }
     75% {
-        box-shadow: 0 0 12px #fe9000;
+        box-shadow: 0 0 12px $orange;
     }
     100% {
-        box-shadow: 0 0 4px #b6d8eb;
+        box-shadow: 0 0 4px $light_blue;
     }
 }
 

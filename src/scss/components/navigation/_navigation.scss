@@ -26,8 +26,8 @@
 }
 
 .nav-list-item a {
-    color: #243846;
-    fill: #243846;
+    color: $dark_blue;
+    fill: $dark_blue;
     text-decoration: none;
     padding: 0.25rem 1.5rem;
     display: flex;
@@ -44,8 +44,8 @@
 
 .nav-list-item a:hover,
 .nav-list-item a:focus {
-    color: #fe9000;
-    fill: #fe9000;
+    color: $orange;
+    fill: $orange;
 }
 
 @media (min-width: 580px) {

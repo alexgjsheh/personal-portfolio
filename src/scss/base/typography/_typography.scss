@@ -19,7 +19,7 @@ p {
 
 h1 {
     letter-spacing: 0.75px;
-    text-shadow: 1px 1px 3px #b6d8eb;
+    text-shadow: 1px 1px 3px $light_blue;
 }
 
 h1,
@@ -38,7 +38,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: white;
+    color: $off_white;
     font-weight: normal;
 }
 
@@ -61,11 +61,6 @@ h4 {
 
 .intro-text {
     font-size: 1.2rem;
-}
-
-// works page
-
-.single-work-info {
 }
 
 // about page
