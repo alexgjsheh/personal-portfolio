@@ -16,7 +16,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 0.25rem 0;
 }
 
 .nav-list-item {
@@ -64,5 +64,8 @@
         border-radius: 50%;
         width: 56px;
         // height: 56px;
+    }
+    .nav-list {
+        margin: 0.5rem 0;
     }
 }
