@@ -14,10 +14,9 @@ const AppRouter = () => {
     return (
         <Router basename="/">
             <div
-                className="bg"
+                className="App"
                 style={{ backgroundImage: `url(${backgroundImg})` }}
-            ></div>
-            <div className="App">
+            >
                 <Routes>
                     <Route path="/" exact element={<PageHome />} />
                     <Route path="/works/:slug" element={<PageSingle />} />
