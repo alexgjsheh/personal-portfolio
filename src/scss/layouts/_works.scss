@@ -11,11 +11,11 @@
 }
 
 .single-work-image {
-    height: auto;
     object-fit: cover;
     align-self: stretch;
     max-height: 300px;
     margin-bottom: 1rem;
+    aspect-ratio: 16 / 9;
 }
 
 .single-work-info {
@@ -137,12 +137,10 @@
 
 @media (min-width: 1300px) {
     .single-work-image {
-        width: 56%;
         max-height: 440px;
     }
 
     .single-work-info {
-        width: 42%;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
         display: flex;
