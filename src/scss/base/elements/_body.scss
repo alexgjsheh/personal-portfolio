@@ -2,18 +2,30 @@ html {
     scroll-behavior: smooth;
 }
 
-.App {
+.bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    padding-bottom: 6rem;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+}
+
+.App {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    // background: transparent;
 }
 
 body {
-    background: $color__background-body; // Fallback for when there is no custom background color defined.
+    // background-color: blue; // Fallback for when there is no custom background color defined.
     color: #f8f7f4;
 }
