@@ -4,7 +4,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    // background-color: rgba(18, 27, 36, 0.69);
     background-color: rgba(255, 255, 255, 0.87);
     margin: 0 auto;
     z-index: 10;
@@ -17,12 +16,6 @@
     align-items: center;
     padding: 0;
     margin: 0.25rem 0;
-}
-
-.nav-list-item {
-}
-
-.nav-list-item:hover {
 }
 
 .nav-list-item a {
@@ -63,7 +56,6 @@
     .works-page-nav {
         border-radius: 50%;
         width: 56px;
-        // height: 56px;
     }
     .nav-list {
         margin: 0.5rem 0;

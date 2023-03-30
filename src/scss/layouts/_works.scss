@@ -10,21 +10,15 @@
     margin-bottom: 4rem;
 }
 
-// .single-work-container:last-child {
-//     border-bottom: none;
-// }
-
 .single-work-image {
     height: auto;
     object-fit: cover;
     align-self: stretch;
     max-height: 300px;
-    // width: 50%;
     margin-bottom: 1rem;
 }
 
 .single-work-info {
-    // width: 46%;
     padding: 1rem 0.5rem 2rem;
     width: 95%;
     margin: 0 auto;
@@ -57,7 +51,6 @@
     height: 2px;
     font-size: 3rem;
     text-align: center;
-    // color: #ffc9b4;
     position: relative;
     left: 0;
     right: 0;
