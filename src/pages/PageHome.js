@@ -28,7 +28,7 @@ const PageHome = () => {
     }, [restPath]);
 
     useEffect(() => {
-        document.title = `Alex Sheh`;
+        document.title = `Alex Sheh | Portfolio`;
     }, []);
 
     return (
