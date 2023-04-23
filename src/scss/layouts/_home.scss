@@ -1,15 +1,14 @@
 .intro-wrapper {
     width: 90%;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.home {
+    margin: -4.5rem auto 4.5rem;
+    min-height: calc(100vh - 7rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home {
     color: $off_white;
-    padding-top: 12rem;
 }
 
 @keyframes slideFromLeft {
