@@ -84,132 +84,155 @@ const PageSingle = () => {
                                     {restData[0].title.rendered}
                                 </h2>
                                 {restData.map((post) => (
-                                    <article
-                                        className="single-work-container margin-bot-adjust"
-                                        key={post.id}
-                                        id={`post-${post.id}`}
-                                    >
-                                        <img
-                                            className="single-works-page-image hidden-left"
-                                            src={
-                                                post._embedded[
-                                                    "wp:featuredmedia"
-                                                ][0].source_url
-                                            }
-                                            alt={
-                                                post._embedded[
-                                                    "wp:featuredmedia"
-                                                ][0].title.rendered
-                                            }
-                                        />
-                                        <div className="single-works-page-work-info hidden-right opaque-background">
-                                            <h3 className="single-work-overview-heading hidden">
-                                                {post.acf.work_overview_heading}
-                                            </h3>
-                                            <p className="tech-used-list hidden">
-                                                {post.acf.technologies_used}
-                                            </p>
-                                            <p className="single-work-overview hidden">
-                                                {post.acf.work_overview}
-                                            </p>
-                                            <div className="link-container hidden">
-                                                <a
-                                                    href={
-                                                        post.acf.live_site_link
-                                                            .url
+                                    <>
+                                        <article
+                                            className="single-work-container margin-bot-adjust"
+                                            key={post.id}
+                                            id={`post-${post.id}`}
+                                        >
+                                            <img
+                                                className="single-works-page-image hidden-left"
+                                                src={
+                                                    post._embedded[
+                                                        "wp:featuredmedia"
+                                                    ][0].source_url
+                                                }
+                                                alt={
+                                                    post._embedded[
+                                                        "wp:featuredmedia"
+                                                    ][0].title.rendered
+                                                }
+                                            />
+                                            <div className="single-works-page-work-info hidden-right opaque-background">
+                                                <h3 className="single-work-overview-heading hidden">
+                                                    {
+                                                        post.acf
+                                                            .work_overview_heading
                                                     }
-                                                    className="btn linkedin-git single"
-                                                    target="_blank"
-                                                >
-                                                    Live Site
-                                                    <div className="btn-horizontal"></div>
-                                                    <div className="btn-vertical"></div>
-                                                </a>
-                                                <a
-                                                    href={
-                                                        post.acf.github_link.url
-                                                    }
-                                                    className="btn linkedin-git single"
-                                                    target="_blank"
-                                                >
-                                                    Github
-                                                    <div className="btn-horizontal"></div>
-                                                    <div className="btn-vertical"></div>
-                                                </a>
-                                            </div>
-                                            <h3 className="single-work-features-heading hidden">
-                                                {post.acf.features_heading}
-                                            </h3>
-                                            <div className="features-container reverse hidden-left">
-                                                <div className="features-content">
-                                                    <h4 className="single-work-features-sub-heading">
-                                                        {
+                                                </h3>
+                                                <p className="tech-used-list hidden">
+                                                    {post.acf.technologies_used}
+                                                </p>
+                                                <p className="single-work-overview hidden">
+                                                    {post.acf.work_overview}
+                                                </p>
+                                                <div className="link-container hidden">
+                                                    <a
+                                                        href={
                                                             post.acf
-                                                                .feature_1_heading
-                                                        }
-                                                    </h4>
-                                                    <p>
-                                                        {
-                                                            post.acf
-                                                                .feature_1_description
-                                                        }
-                                                    </p>
-                                                </div>
-                                                <div className="features-video-container">
-                                                    <video
-                                                        className="features-video"
-                                                        src={
-                                                            post.acf
-                                                                .feature_1_video
+                                                                .live_site_link
                                                                 .url
                                                         }
-                                                        type="video/mp4"
-                                                        autoPlay
-                                                        muted
-                                                        loop
-                                                        playsInline
+                                                        className="btn linkedin-git single"
+                                                        target="_blank"
+                                                        rel="noreferrer"
                                                     >
-                                                        Your browser does not
-                                                        support this video type.
-                                                    </video>
-                                                </div>
-                                            </div>
-                                            <div className="features-container hidden-right">
-                                                <div className="features-content">
-                                                    <h4 className="single-work-features-sub-heading">
-                                                        {
-                                                            post.acf
-                                                                .feature_2_heading
-                                                        }
-                                                    </h4>
-                                                    <p>
-                                                        {
-                                                            post.acf
-                                                                .feature_2_description
-                                                        }
-                                                    </p>
-                                                </div>
-                                                <div className="features-video-container">
-                                                    <video
-                                                        className="features-video"
-                                                        src={
-                                                            post.acf
-                                                                .feature_2_video
+                                                        Live Site
+                                                        <div className="btn-horizontal"></div>
+                                                        <div className="btn-vertical"></div>
+                                                    </a>
+                                                    <a
+                                                        href={
+                                                            post.acf.github_link
                                                                 .url
                                                         }
-                                                        type="video/mp4"
-                                                        autoPlay
-                                                        muted
-                                                        loop
-                                                        playsInline
+                                                        className="btn linkedin-git single"
+                                                        target="_blank"
+                                                        rel="noreferrer"
                                                     >
-                                                        Your browser does not
-                                                        support this video type.
-                                                    </video>
+                                                        Github
+                                                        <div className="btn-horizontal"></div>
+                                                        <div className="btn-vertical"></div>
+                                                    </a>
                                                 </div>
+                                                <h3 className="single-work-features-heading hidden">
+                                                    {post.acf.features_heading}
+                                                </h3>
+                                                <div className="features-container reverse hidden-left">
+                                                    <div className="features-content">
+                                                        <h4 className="single-work-features-sub-heading">
+                                                            {
+                                                                post.acf
+                                                                    .feature_1_heading
+                                                            }
+                                                        </h4>
+                                                        <p>
+                                                            {
+                                                                post.acf
+                                                                    .feature_1_description
+                                                            }
+                                                        </p>
+                                                    </div>
+                                                    <div className="features-video-container">
+                                                        <video
+                                                            className="features-video"
+                                                            src={
+                                                                post.acf
+                                                                    .feature_1_video
+                                                                    .url
+                                                            }
+                                                            type="video/mp4"
+                                                            autoPlay
+                                                            muted
+                                                            loop
+                                                            playsInline
+                                                        >
+                                                            Your browser does
+                                                            not support this
+                                                            video type.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <div className="features-container hidden-right">
+                                                    <div className="features-content">
+                                                        <h4 className="single-work-features-sub-heading">
+                                                            {
+                                                                post.acf
+                                                                    .feature_2_heading
+                                                            }
+                                                        </h4>
+                                                        <p>
+                                                            {
+                                                                post.acf
+                                                                    .feature_2_description
+                                                            }
+                                                        </p>
+                                                    </div>
+                                                    <div className="features-video-container">
+                                                        <video
+                                                            className="features-video"
+                                                            src={
+                                                                post.acf
+                                                                    .feature_2_video
+                                                                    .url
+                                                            }
+                                                            type="video/mp4"
+                                                            autoPlay
+                                                            muted
+                                                            loop
+                                                            playsInline
+                                                        >
+                                                            Your browser does
+                                                            not support this
+                                                            video type.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <h3 className="single-work-reflection-heading hidden">
+                                                    {
+                                                        post.acf
+                                                            .reflection_heading
+                                                    }
+                                                </h3>
+                                                <p className="single-work-reflection hidden">
+                                                    {
+                                                        post.acf
+                                                            .project_reflection
+                                                    }
+                                                </p>
                                             </div>
-                                        </div>
-                                    </article>
+                                        </article>
+                                    </>
                                 ))}
                                 <article className="container more-works">
                                     <h3 className="more-works-container-title hidden">

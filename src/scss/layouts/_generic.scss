@@ -75,15 +75,9 @@ body {
 
 @media (min-width: 1400px) {
     .main-container {
+        width: 80%;
+        max-width: 1250px;
         margin-left: 4rem;
         margin-right: 4rem;
-    }
-}
-
-@media (min-width: 1600px) {
-    .main-container {
-        width: 80%;
-        margin-left: 6em;
-        margin-right: 6rem;
     }
 }
