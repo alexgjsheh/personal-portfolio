@@ -3,30 +3,7 @@ html {
 }
 
 .App {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(1, 4, 6, 1) 11%,
-        rgba(2, 10, 18, 1) 22%,
-        rgba(3, 15, 27, 1) 31%,
-        rgba(4, 18, 32, 1) 39%,
-        rgba(6, 24, 43, 1) 45%,
-        rgba(7, 27, 49, 1) 50%,
-        rgba(8, 31, 56, 1) 57%,
-        rgba(9, 37, 66, 1) 63%,
-        rgba(18, 50, 81, 1) 72%,
-        rgba(26, 61, 93, 1) 77%,
-        rgba(33, 71, 105, 1) 82%,
-        rgba(40, 81, 116, 1) 87%,
-        rgba(47, 91, 127, 1) 92%,
-        rgba(55, 102, 139, 1) 96%,
-        rgba(68, 119, 160, 1) 100%,
-        rgba(111, 183, 229, 1) 100%
-    );
-
+    background-image: linear-gradient(to bottom right, black 50%, #092542 50%);
     min-height: 100vh;
     padding-bottom: 6rem;
     display: flex;
