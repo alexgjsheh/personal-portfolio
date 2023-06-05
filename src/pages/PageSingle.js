@@ -18,7 +18,6 @@ const PageSingle = () => {
     const [isLoaded, setLoadStatus] = useState(false);
     console.log(isLoaded);
 
-    // clean this up later...
     useEffect(() => {
         setLoadStatus(false);
 
@@ -29,13 +28,13 @@ const PageSingle = () => {
                 const data = await response.json();
                 const data2 = await response2.json();
 
-                let xyz = [];
+                let differentWorksArray = [];
                 for (let i = 0; i < data2.length; i++) {
                     if (data2[i].slug !== slug) {
-                        xyz.push(data2[i]);
+                        differentWorksArray.push(data2[i]);
                     }
                 }
-                setData2(xyz);
+                setData2(differentWorksArray);
                 setData(data);
                 setLoadStatus(true);
             } else {
@@ -43,7 +42,6 @@ const PageSingle = () => {
             }
         };
         fetchData();
-        console.log("hi");
     }, [restPath, slug]);
 
     useEffect(() => {
@@ -56,7 +54,6 @@ const PageSingle = () => {
             // fade in work boxes
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
-                    // console.log(entry);
                     if (entry.isIntersecting) {
                         entry.target.classList.add("show");
                     }
@@ -65,7 +62,6 @@ const PageSingle = () => {
             hidden.forEach((el) => observer.observe(el));
             hiddenLeft.forEach((el) => observer.observe(el));
             hiddenRight.forEach((el) => observer.observe(el));
-            console.log("bye");
         }
     }, [isLoaded, restData]);
 

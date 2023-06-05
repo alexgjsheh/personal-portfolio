@@ -1,0 +1,19 @@
+.page-not-found {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 440px) {
+    .page-not-found {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (min-width: 740px) {
+    .page-not-found {
+        padding: 3rem 2rem;
+    }
+}

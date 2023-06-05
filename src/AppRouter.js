@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PageHome from "./pages/PageHome";
 import PageSingle from "./pages/PageSingle";
+import PageNotFound from "./pages/PageNotFound";
 
 import "./App.css";
 
@@ -20,7 +21,7 @@ const AppRouter = () => {
                 <Routes>
                     <Route path="/" exact element={<PageHome />} />
                     <Route path="/works/:slug" element={<PageSingle />} />
-                    {/* <Route path="*" element={<PageNotFound />} /> */}
+                    <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </div>
         </Router>
